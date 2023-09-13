@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Ejercicio 3</h1>
+    <p>
+        Escribe un programa que tome dos números y una operación matemática (+, -,
+        *, /) como entrada, y muestre el resultado de la operación.
+    </p>
+
+    <script>
+        let numeroUno = parseInt(prompt("Ingrese el primer número")); //parseInt() convierte a entero (número) Sintáxis parseInt (string, base)        let numeroDos = parseInt(prompt("Ingrese el segundo número"));
+        let numeroDos = parseInt(prompt("Ingrese el segundo número"));
+        let operador = prompt("Ingrese + , - , * o /"); //prompt muestra un diáñogo con mensaje opcional, que solicita al usuario que introduzca un texto
+        let resultado = 0;
+        if (operador == "+") {
+            resultado = numeroUno + numeroDos;
+            alert("El resultado de la suma es " + resultado);
+        }
+        if (operador == "-") {
+            resultado = numeroUno - numeroDos;
+            alert("El resultado de la resta es " + resultado);
+        }
+        if (operador == "*") {
+            resultado = numeroUno * numeroDos;
+            alert("El resultado de la multiplicación es " + resultado);
+        }
+        if (operador == "/") {
+            resultado = numeroUno / numeroDos;
+            alert("El resultado de la división es " + resultado);
+        }
+    </script>
+    <br>
+    <a href="ejercicio1.html">Ejercicio 1</a>
+    <a href="ejercicio2.html">ejercicio 2</a>
+    <a href="ejercicio4.html">Ejercicio 4</a>
+    <a href="ejercicio5.html">Ejercicio 5</a>
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificación de Alumnos</title>
+    <link rel="stylesheet" href="condicionAlumno.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Registro de Alumnos</h1>
+        <form id="alumnoForm">
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" required>
+            <br>
+
+            <label for="parcial1">Nota del Primer Parcial:</label>
+            <input type="number" id="parcial1" min="0" max="10" step="0.1" required>
+            <br>
+
+            <label for="parcial2">Nota del Segundo Parcial:</label>
+            <input type="number" id="parcial2" min="0" max="10" step="0.1" required>
+            <br>
+
+            <label for="asistencias">Asistencias:</label>
+            <input type="number" id="asistencias" min="0" max="40" required>
+            <br>
+
+            <button type="button" onclick="calcularCondicion()">Calcular Condición</button>
+        </form>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script>
+        function calcularCondicion() {
+            const dni = document.getElementById("dni").value;
+            const notaPrimerParcial = parseFloat(document.getElementById("parcial1").value);
+            const notaSegundoParcial = parseFloat(document.getElementById("parcial2").value);
+            const asistencias = parseFloat(document.getElementById("asistencias").value);
+
+            const porcentajeAsistencias = (asistencias / 40) * 100;
+
+            if (notaPrimerParcial >= 8 && notaSegundoParcial >= 8 && porcentajeAsistencias >= 80) {
+                mostrarResultado("Alumno regular: " + dni);
+            } else if (notaPrimerParcial < 8 && notaSegundoParcial < 8 && porcentajeAsistencias >= 60) {
+                mostrarResultado("Debe recuperar un parcial: " + dni);
+            } else {
+                mostrarResultado("Alumno libre: " + dni);
+            }
+        }
+
+        function mostrarResultado(mensaje) {
+            document.getElementById("resultado").textContent = mensaje;
+        }
+
+    </script>
+</body>
+
+</html>

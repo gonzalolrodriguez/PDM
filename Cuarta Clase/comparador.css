@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgb(167, 167, 243),
+            rgb(199, 247, 244),
+            rgb(240, 195, 240));
+    color: rgb(75, 67, 67);
+    font-size: 1.2em;
+}
+
+
+button {
+    background-color: #6bb5e6;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    opacity: 0.9;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+input[type="number"]::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+input[type="number"]:hover::placeholder {
+    color: #666;
+}

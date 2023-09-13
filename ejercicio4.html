@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación de Dispositivos Móviles</title>
+</head>
+
+<body>
+    <h1>Ejercicio 4</h1>
+
+    <p>Tabla de Multiplicar: Escribe un programa que tome un número como entrada e imprima la tabla de multiplicar de
+        ese número del 1 al 10.</p>
+
+    <!-- var numero: Declara una variable llamada numero para almacenar el número ingresado por el usuario.
+    parseInt(...): La función parseInt convierte una cadena (string) en un número entero. Aquí, se utiliza para
+    convertir la entrada del usuario en un número entero.
+    prompt("Ingrese un numero"): Muestra una ventana emergente (prompt) que le pide al usuario ingresar un número. El
+    texto "Ingrese un numero" es el mensaje que se muestra en la ventana emergente. La entrada del usuario es una cadena
+    de texto. -->
+
+    <!-- for (let i = 1; i <= 10; i++) { ... }: Este es un bucle for que se ejecutará 10 veces (desde i=1 hasta i <=10), incrementando i en cada iteración.
+        alert(numero * i): Dentro del bucle, utilizamos la función alert() para  mostrar un mensaje emergente con el resultado de multiplicar numero por i. En cada iteración, i toma valores de
+            1 a 10, lo que genera la tabla de multiplicar del número ingresado. -->
+
+    <script>
+        var numero = parseInt(prompt("Ingrese un numero"));
+        for (let i = 1; i <= 10; i++) {
+            alert(numero * i)
+        }
+    </script>
+</body>
+<a href="ejercicio1.html">Ejercicio 1</a>
+<a href="ejercicio2.html">Ejercicio 2</a>
+<a href="ejercicio3.html">Ejercicio 3</a>
+<a href="ejercicio5.html">Ejercicio 5</a>
+
+</html>

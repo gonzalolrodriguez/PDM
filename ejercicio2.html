@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programación de Dispositivos Móviles</title>
+</head>
+
+<body>
+    <h1>Ejercicio 2</h1>
+    <p>
+        Escribe un programa que tome la edad de una persona como entrada y muestre
+        en pantalla en qué categoría de edad se encuentra: niño, adolescente,
+        adulto o adulto mayor.
+    </p>
+
+    <script>
+        var age = parseInt(prompt("Ingrese la edad"));
+        if (age <= 10) {
+            alert("Niño");
+        } else {
+            if (age > 10 && age <= 17) {
+                alert("Adolescente");
+            } else {
+                if (age >= 18 && age <= 45) {
+                    alert("Adulto");
+                } else {
+                    alert("Adulto Mayor");
+                }
+            }
+        }
+    </script>
+
+    <a href="ejercicio1.html">Ejercicio 1</a>
+    <a href="ejercicio3.html">Ejercicio 3</a>
+    <a href="ejercicio4.html">Ejercicio 4</a>
+    <a href="ejercicio5.html">Ejercicio 5</a>
+</body>
+
+</html>

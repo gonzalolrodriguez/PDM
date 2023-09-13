@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación de Dispositivos Móviles</title>
+</head>
+
+<body>
+    <h1>Ejercicio 5</h1>
+    <p><strong> Suma de dos dígitos pares: <br>
+            Escribe un programa que tome un número como
+            entrada y calcule la suma de sus dígitos pares.
+            Luego, muestra en pantalla el número ingresado y la
+            suma resultante.
+        </strong></p>
+
+    <script>
+        let num = prompt("Ingresa un número: ");
+        //let num: Declara una variable llamada num que almacenará la entrada numérica ingresada por el usuario.
+        //prompt("Ingresa un número: "): Muestra una ventana emergente(prompt) que le pide al usuario ingresar un número.El mensaje "Ingresa un número: " es el texto que se muestra en la ventana emergente.La entrada del usuario es una cadena de texto.
+        let sum = 0;
+        //let sum: Declara una variable llamada sum que se utilizará para almacenar la suma de los dígitos pares del número ingresado por el usuario.
+        for (let i = 0; i < num.length; i++) {
+            if (num[i] % 2 == 0) {
+                sum += parseInt(num[i]);
+            }
+        }
+        //for (let i = 0; i < num.length; i++) { ... }: Este es un bucle for que recorre cada dígito en la cadena num, desde el primer dígito (índice 0) hasta el último (índice num.length - 1).
+        //if (num[i] % 2 == 0) { ... }: Dentro del bucle, esta estructura if verifica si el dígito actual (num[i]) es par. Esto se hace comprobando si el dígito es divisible por 2 (su residuo es 0).
+        //sum += parseInt(num[i]);: Si el dígito es par, se convierte a un número entero usando parseInt() y se suma al valor actual de sum.
+        //document.write(`El número ingresado es: ${num}<br>`);
+        //document.write(`La suma de sus dígitos pares es: ${sum}`);
+
+        document.write(`El número ingresado es: ${num}<br>`);
+        //document.write(El número ingresado es: ${num}<br>);: Escribe en el documento el mensaje que indica el número ingresado por el usuario.
+        document.write(`La suma de sus dígitos pares es: ${sum}`);
+        //document.write(La suma de sus dígitos pares es: ${sum});: Escribe en el documento el mensaje que indica la suma de los dígitos pares del número ingresado.
+
+
+
+    </script>
+    
+</body>
+<br> <br>
+<a href="ejercicio1.html">Ejercicio 1</a>
+<a href="ejercicio2.html">Ejercicio 2</a>
+<a href="ejercicio3.html">Ejercicio 3</a>
+<a href="ejercicio4.html">Ejercicio 4</a>
+
+</html>
